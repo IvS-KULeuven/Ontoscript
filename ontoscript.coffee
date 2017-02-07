@@ -711,7 +711,7 @@ Primitive = class
 
     # CONSTRUCTOR: create a primitive type.
     constructor: (@_name, @value, @xsdType) ->
-        if not value?
+        if not @value?
             ABORT "No argument given for #{@_name}()!"
 
         if @value is Infinity
@@ -782,8 +782,6 @@ root.time       = (Y,M,D,h,m,s,ms,tz) ->
                             ABORT "Invalid arguments for time(): cannot specify ms without specifying h,m,s"
 
                     if tz? then dt += "Z"
-
-                    ABORT dt
 
                     return new Primitive("time", dt , "dateTime")
 
