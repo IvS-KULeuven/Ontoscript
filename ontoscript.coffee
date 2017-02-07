@@ -1047,7 +1047,7 @@ class Stack
 
     # CONSTRUCTOR: create a stack with a certain name
     constructor: (@_name) ->
-        @log_set("new Stack '#{_name}'")
+        @log_set("new Stack '#{@_name}'")
         @fullName_to_individual = {}
         @shortcut_to_individual = {}
         @log_unset()
