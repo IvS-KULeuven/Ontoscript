@@ -1632,7 +1632,7 @@ class Macro
     #                - the macro function, e.g .(country=countries.UK) -> [ music.hasFoundingCountry country ]
     constructor: (@individualBuilder, @_name, @function) ->
         @ns = new NameSpace()
-        @log_set("new Macro <function>, '#{_name}', <function>")
+        @log_set("new Macro <function>, '#{@_name}', <function>")
         @log_unset()
 
 
