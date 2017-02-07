@@ -783,6 +783,8 @@ root.time       = (Y,M,D,h,m,s,ms,tz) ->
 
                     if tz? then dt += "Z"
 
+                    ABORT dt
+
                     return new Primitive("time", dt , "dateTime")
 
 
