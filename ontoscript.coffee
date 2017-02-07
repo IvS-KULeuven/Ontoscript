@@ -721,9 +721,9 @@ Primitive = class
             @value = "-INF"
             @xsdValue = @value
         else if @_name is "bool"
-            @xsdValue = Boolean(value).toString()
+            @xsdValue = Boolean(@value).toString()
         else
-            @xsdValue = value.toString()
+            @xsdValue = @value.toString()
 
 
     # METHOD: get a string representation.
