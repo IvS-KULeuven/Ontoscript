@@ -1345,7 +1345,7 @@ class Individual
                 @log_set "ADD #{x.toCompactString()}"
                 if this[x._name]?
                     #JOIN(this[x._name], x)
-                    ABORT("Cannot ADD #{x.toCompactString()}: an invidual already exists with that name!\n"+@toString())
+                    ABORT("Cannot ADD #{x.toCompactString()}: an invidual already exists with that name!")
                 else
                     x.addNamePrefix(@_name)
                     # if we have a valid namespace, propagate it to the individual
