@@ -2638,7 +2638,7 @@ rdfs.addDatatypeProperty("label")
 prov.addDatatypeProperty("generatedAtTime")
 
 
-METAMODEL "http://mercator.iac.es/onto/metamodels/ontoscript" : "ontoscript"
+METAMODEL "http://www.mercator.iac.es/onto/metamodels/ontoscript" : "ontoscript"
 ontoscript.addDatatypeProperty("counter")
 ontoscript.addDatatypeProperty("hasViewCategory")
 ontoscript.addDatatypeProperty("hasViewType")
